@@ -9,7 +9,7 @@ license = "MIT OR Apache-2.0"
 bytes-hex = { path = "../bytes-hex" }
 app-data = { path = "../app-data" }
 bigdecimal = { workspace = true, features = ["serde"] }
-chrono = { workspace = true }
+chrono = { workspace = true, features = ["serde"] }
 hex = { workspace = true }
 number = { path = "../number" }
 serde = { workspace = true }
