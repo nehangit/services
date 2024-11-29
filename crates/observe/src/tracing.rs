@@ -1,5 +1,4 @@
 use {
-    crate::tracing_reload_handler::spawn_reload_handler,
     std::{panic::PanicHookInfo, sync::Once},
     time::macros::format_description,
     tracing::level_filters::LevelFilter,
@@ -7,10 +6,12 @@ use {
         fmt::{time::UtcTime, writer::MakeWriterExt as _},
         prelude::*,
         util::SubscriberInitExt,
-        EnvFilter,
-        Layer,
+        EnvFilter, Layer,
     },
 };
+
+#[cfg(unix)]
+use crate::tracing_reload_handler::spawn_reload_handler;
 
 /// Initializes tracing setup that is shared between the binaries.
 /// `env_filter` has similar syntax to env_logger. It is documented at
@@ -84,10 +85,8 @@ fn set_tracing_subscriber(env_filter: &str, stderr_threshold: LevelFilter) {
             .with(fmt_layer!(env_filter, stderr_threshold))
             .init();
         tracing::info!("started programm with support for tokio-console");
-
-        if cfg!(unix) {
-            spawn_reload_handler(initial_filter, reload_handle);
-        }
+        #[cfg(unix)]
+        spawn_reload_handler(initial_filter, reload_handle);
     } else {
         let (env_filter, reload_handle) =
             tracing_subscriber::reload::Layer::new(EnvFilter::new(&initial_filter));
@@ -100,9 +99,8 @@ fn set_tracing_subscriber(env_filter: &str, stderr_threshold: LevelFilter) {
             .init();
         tracing::info!("started programm without support for tokio-console");
 
-        if cfg!(unix) {
-            spawn_reload_handler(initial_filter, reload_handle);
-        }
+        #[cfg(unix)]
+        spawn_reload_handler(initial_filter, reload_handle);
     }
 }
 
