@@ -1,11 +1,6 @@
 use {
     crate::{
-        auction::AuctionId,
-        orders::OrderKind,
-        Address,
-        OrderUid,
-        PgTransaction,
-        TransactionHash,
+        auction::AuctionId, orders::OrderKind, Address, OrderUid, PgTransaction, TransactionHash,
     },
     bigdecimal::BigDecimal,
     sqlx::{types::JsonValue, PgConnection, QueryBuilder},

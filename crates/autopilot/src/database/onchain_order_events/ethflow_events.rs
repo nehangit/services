@@ -5,11 +5,9 @@ use {
     chrono::Duration,
     contracts::{
         cowswap_onchain_orders::{
-            event_data::OrderPlacement as ContractOrderPlacement,
-            Event as ContractEvent,
+            event_data::OrderPlacement as ContractOrderPlacement, Event as ContractEvent,
         },
-        deployment_block,
-        GPv2Settlement,
+        deployment_block, GPv2Settlement,
     },
     database::{
         byte_array::ByteArray,

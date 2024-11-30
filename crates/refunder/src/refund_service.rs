@@ -10,10 +10,7 @@ use {
     },
     ethcontract::{Account, H160, H256},
     ethrpc::{
-        block_stream::timestamp_of_current_block_in_seconds,
-        Web3,
-        Web3CallBatch,
-        MAX_BATCH_SIZE,
+        block_stream::timestamp_of_current_block_in_seconds, Web3, Web3CallBatch, MAX_BATCH_SIZE,
     },
     futures::{stream, StreamExt},
     sqlx::PgPool,

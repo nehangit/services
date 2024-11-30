@@ -7,24 +7,15 @@ use {
         infra::{
             self,
             config::file::{
-                default_http_time_buffer,
-                default_solving_share_of_deadline,
-                FeeHandler,
+                default_http_time_buffer, default_solving_share_of_deadline, FeeHandler,
                 OrderPriorityStrategy,
             },
         },
         tests::{
             cases::{
-                is_approximately_equal,
-                EtherExt,
-                AB_ORDER_AMOUNT,
-                AD_ORDER_AMOUNT,
-                CD_ORDER_AMOUNT,
-                DEFAULT_POOL_AMOUNT_A,
-                DEFAULT_POOL_AMOUNT_B,
-                DEFAULT_POOL_AMOUNT_C,
-                DEFAULT_POOL_AMOUNT_D,
-                DEFAULT_SURPLUS_FACTOR,
+                is_approximately_equal, EtherExt, AB_ORDER_AMOUNT, AD_ORDER_AMOUNT,
+                CD_ORDER_AMOUNT, DEFAULT_POOL_AMOUNT_A, DEFAULT_POOL_AMOUNT_B,
+                DEFAULT_POOL_AMOUNT_C, DEFAULT_POOL_AMOUNT_D, DEFAULT_SURPLUS_FACTOR,
                 ETH_ORDER_AMOUNT,
             },
             hex_address,

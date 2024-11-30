@@ -4,10 +4,7 @@ use {
     anyhow::{bail, ensure, Context, Result},
     contracts::ERC20,
     ethcontract::{
-        dyns::DynTransport,
-        jsonrpc::ErrorCode,
-        transaction::TransactionBuilder,
-        PrivateKey,
+        dyns::DynTransport, jsonrpc::ErrorCode, transaction::TransactionBuilder, PrivateKey,
     },
     primitive_types::{H160, U256},
     std::{cmp, sync::Arc},
@@ -317,10 +314,7 @@ mod tests {
             bad_token::token_owner_finder::{
                 blockscout::BlockscoutTokenOwnerFinder,
                 liquidity::{
-                    BalancerVaultFinder,
-                    FeeValues,
-                    UniswapLikePairProviderFinder,
-                    UniswapV3Finder,
+                    BalancerVaultFinder, FeeValues, UniswapLikePairProviderFinder, UniswapV3Finder,
                 },
                 solvers::{
                     solver_api::SolverConfiguration,
@@ -336,14 +330,7 @@ mod tests {
         hex_literal::hex,
         std::{env, time::Duration},
         web3::types::{
-            Action,
-            ActionType,
-            Bytes,
-            Call,
-            CallResult,
-            CallType,
-            Res,
-            TransactionTrace,
+            Action, ActionType, Bytes, Call, CallResult, CallType, Res, TransactionTrace,
         },
     };
 

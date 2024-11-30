@@ -4,8 +4,7 @@ use {
     e2e::{
         nodes::forked_node::ForkedNodeApi,
         setup::{colocation::SolverEngine, mock::Mock, *},
-        tx,
-        tx_value,
+        tx, tx_value,
     },
     ethcontract::{web3::ethabi::Token, BlockId, BlockNumber, H160, U256},
     model::{
@@ -16,12 +15,7 @@ use {
     secp256k1::SecretKey,
     shared::{addr, ethrpc::Web3},
     solvers_dto::solution::{
-        BuyTokenBalance,
-        Call,
-        Kind,
-        SellTokenBalance,
-        SigningScheme,
-        Solution,
+        BuyTokenBalance, Call, Kind, SellTokenBalance, SigningScheme, Solution,
     },
     std::collections::{HashMap, HashSet},
     web3::signing::SecretKeyRef,

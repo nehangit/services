@@ -3,19 +3,13 @@ use {
     e2e::{
         assert_approximately_eq,
         setup::{fee::*, *},
-        tx,
-        tx_value,
+        tx, tx_value,
     },
     ethcontract::{prelude::U256, Address},
     model::{
         order::{Order, OrderCreation, OrderCreationAppData, OrderKind},
         quote::{
-            OrderQuote,
-            OrderQuoteRequest,
-            OrderQuoteResponse,
-            OrderQuoteSide,
-            SellAmount,
-            Validity,
+            OrderQuote, OrderQuoteRequest, OrderQuoteResponse, OrderQuoteSide, SellAmount, Validity,
         },
         signature::EcdsaSigningScheme,
     },

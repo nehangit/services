@@ -6,8 +6,7 @@ use {
     hex_literal::hex,
     model::{
         signature::{EcdsaSignature, EcdsaSigningScheme},
-        DomainSeparator,
-        TokenPair,
+        DomainSeparator, TokenPair,
     },
     secp256k1::SecretKey,
     shared::ethrpc::Web3,

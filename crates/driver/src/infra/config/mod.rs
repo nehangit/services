@@ -4,10 +4,7 @@ use {
         infra::{
             blockchain,
             config::file::{GasEstimatorType, OrderPriorityStrategy},
-            liquidity,
-            mempool,
-            simulator,
-            solver,
+            liquidity, mempool, simulator, solver,
         },
     },
     url::Url,

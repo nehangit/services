@@ -1,12 +1,8 @@
 use {
     anyhow::Context,
     database::{
-        auction::AuctionId,
-        auction_participants::Participant,
-        auction_prices::AuctionPrice,
-        byte_array::ByteArray,
-        settlement_scores::Score,
-        surplus_capturing_jit_order_owners,
+        auction::AuctionId, auction_participants::Participant, auction_prices::AuctionPrice,
+        byte_array::ByteArray, settlement_scores::Score, surplus_capturing_jit_order_owners,
         Address,
     },
     derivative::Derivative,

@@ -3,8 +3,7 @@ use {
     crate::domain::{
         self,
         auction::{self, order},
-        eth,
-        fee,
+        eth, fee,
     },
     bigdecimal::Zero,
 };

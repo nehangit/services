@@ -2,12 +2,9 @@ use {
     crate::{
         domain::eth,
         infra::{
-            self,
-            blockchain,
+            self, blockchain,
             config::file,
-            liquidity,
-            mempool,
-            simulator,
+            liquidity, mempool, simulator,
             solver::{self, SolutionMerging},
         },
     },

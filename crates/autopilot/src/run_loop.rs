@@ -24,11 +24,7 @@ use {
     futures::{future::BoxFuture, FutureExt, TryFutureExt},
     itertools::Itertools,
     model::solver_competition::{
-        CompetitionAuction,
-        Order,
-        Score,
-        SolverCompetitionDB,
-        SolverSettlement,
+        CompetitionAuction, Order, Score, SolverCompetitionDB, SolverSettlement,
     },
     primitive_types::H256,
     rand::seq::SliceRandom,

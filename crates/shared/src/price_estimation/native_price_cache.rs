@@ -1,9 +1,7 @@
 use {
     super::PriceEstimationError,
     crate::price_estimation::native::{
-        from_normalized_price,
-        NativePriceEstimateResult,
-        NativePriceEstimating,
+        from_normalized_price, NativePriceEstimateResult, NativePriceEstimating,
     },
     bigdecimal::BigDecimal,
     futures::{FutureExt, StreamExt},

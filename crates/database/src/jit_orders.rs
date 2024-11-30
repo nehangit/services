@@ -1,18 +1,14 @@
 use {
     crate::{
         orders::{self, BuyTokenDestination, OrderKind, SellTokenSource, SigningScheme},
-        Address,
-        AppId,
-        OrderUid,
-        TransactionHash,
+        Address, AppId, OrderUid, TransactionHash,
     },
     sqlx::{
         types::{
             chrono::{DateTime, Utc},
             BigDecimal,
         },
-        PgConnection,
-        QueryBuilder,
+        PgConnection, QueryBuilder,
     },
 };
 

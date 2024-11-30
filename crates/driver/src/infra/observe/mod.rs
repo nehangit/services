@@ -11,8 +11,7 @@ use {
             competition::{
                 self,
                 solution::{self, Settlement},
-                Solution,
-                Solved,
+                Solution, Solved,
             },
             eth::{self, Gas},
             mempools,

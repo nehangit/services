@@ -7,9 +7,7 @@ use {
         native_price_cache::CachingNativePriceEstimator,
         sanitized::SanitizedPriceEstimator,
         trade_verifier::{TradeVerifier, TradeVerifying},
-        Arguments,
-        NativePriceEstimator as NativePriceEstimatorSource,
-        PriceEstimating,
+        Arguments, NativePriceEstimator as NativePriceEstimatorSource, PriceEstimating,
     },
     crate::{
         arguments::{self, ExternalSolver},

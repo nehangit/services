@@ -250,11 +250,8 @@ where
 #[cfg(test)]
 mod tests {
     use {
-        super::*,
-        crate::price_estimation::native::MockNativePriceEstimating,
-        futures::future::try_join_all,
-        num::ToPrimitive,
-        tokio::time::sleep,
+        super::*, crate::price_estimation::native::MockNativePriceEstimating,
+        futures::future::try_join_all, num::ToPrimitive, tokio::time::sleep,
     };
 
     impl NativePriceEstimating for MockNativePriceBatchFetching {

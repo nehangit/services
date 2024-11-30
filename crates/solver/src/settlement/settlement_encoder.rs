@@ -9,10 +9,8 @@ use {
     },
     primitive_types::{H160, U256},
     shared::{
-        conversions::U256Ext,
-        encoded_settlement::EncodedSettlement,
-        http_solver::model::InternalizationStrategy,
-        interaction::Interaction,
+        conversions::U256Ext, encoded_settlement::EncodedSettlement,
+        http_solver::model::InternalizationStrategy, interaction::Interaction,
     },
     std::{
         collections::{HashMap, HashSet},

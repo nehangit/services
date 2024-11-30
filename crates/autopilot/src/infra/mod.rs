@@ -4,8 +4,5 @@ pub mod shadow;
 pub mod solvers;
 
 pub use {
-    blockchain::Ethereum,
-    order_validation::banned,
-    persistence::Persistence,
-    solvers::Driver,
+    blockchain::Ethereum, order_validation::banned, persistence::Persistence, solvers::Driver,
 };

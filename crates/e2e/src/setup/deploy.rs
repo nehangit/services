@@ -1,15 +1,8 @@
 use {
     contracts::{
-        BalancerV2Authorizer,
-        BalancerV2Vault,
-        CoWSwapEthFlow,
-        CowAmmLegacyHelper,
-        GPv2AllowListAuthentication,
-        GPv2Settlement,
-        HooksTrampoline,
-        UniswapV2Factory,
-        UniswapV2Router02,
-        WETH9,
+        BalancerV2Authorizer, BalancerV2Vault, CoWSwapEthFlow, CowAmmLegacyHelper,
+        GPv2AllowListAuthentication, GPv2Settlement, HooksTrampoline, UniswapV2Factory,
+        UniswapV2Router02, WETH9,
     },
     ethcontract::{errors::DeployError, Address, H256, U256},
     model::DomainSeparator,

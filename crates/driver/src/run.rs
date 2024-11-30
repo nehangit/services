@@ -4,9 +4,7 @@ use {
         infra::{
             self,
             blockchain::{self, Ethereum},
-            cli,
-            config,
-            liquidity,
+            cli, config, liquidity,
             simulator::{self, Simulator},
             solver::Solver,
             Api,

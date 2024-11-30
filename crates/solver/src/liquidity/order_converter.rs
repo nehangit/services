@@ -1,11 +1,6 @@
 use {
     super::{
-        BalancedOrder,
-        Exchange,
-        LimitOrder,
-        LimitOrderExecution,
-        LimitOrderId,
-        LiquidityOrderId,
+        BalancedOrder, Exchange, LimitOrder, LimitOrderExecution, LimitOrderId, LiquidityOrderId,
         SettlementHandling,
     },
     crate::{interactions::UnwrapWethInteraction, settlement::SettlementEncoder},

@@ -9,11 +9,9 @@ use {
     },
     anyhow::{Context, Result},
     contracts::{
-        deployed_bytecode,
-        dummy_contract,
+        deployed_bytecode, dummy_contract,
         support::{AnyoneAuthenticator, Solver, Trader},
-        GPv2Settlement,
-        WETH9,
+        GPv2Settlement, WETH9,
     },
     ethcontract::{tokens::Tokenize, Bytes, H160, U256},
     ethrpc::{block_stream::CurrentBlockWatcher, extensions::StateOverride, Web3},

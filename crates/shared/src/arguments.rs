@@ -5,8 +5,7 @@ use {
     crate::{
         gas_price_estimation::GasEstimatorType,
         sources::{
-            balancer_v2::BalancerFactoryKind,
-            uniswap_v2::UniV2BaselineSourceParameters,
+            balancer_v2::BalancerFactoryKind, uniswap_v2::UniV2BaselineSourceParameters,
             BaselineSource,
         },
         tenderly_api,

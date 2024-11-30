@@ -1,8 +1,5 @@
 use {
-    super::Postgres,
-    anyhow::Result,
-    bigdecimal::BigDecimal,
-    primitive_types::H160,
+    super::Postgres, anyhow::Result, bigdecimal::BigDecimal, primitive_types::H160,
     std::collections::HashMap,
 };
 

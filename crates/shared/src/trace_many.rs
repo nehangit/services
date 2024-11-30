@@ -3,8 +3,7 @@ use {
     anyhow::{Context, Result},
     web3::{
         types::{BlockNumber, BlockTrace, CallRequest, TraceType},
-        Error,
-        Transport,
+        Error, Transport,
     },
 };
 

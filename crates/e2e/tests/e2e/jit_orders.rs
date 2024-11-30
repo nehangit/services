@@ -1,8 +1,7 @@
 use {
     e2e::{
         setup::{colocation::SolverEngine, mock::Mock, solution::JitOrder, *},
-        tx,
-        tx_value,
+        tx, tx_value,
     },
     ethcontract::prelude::U256,
     model::{

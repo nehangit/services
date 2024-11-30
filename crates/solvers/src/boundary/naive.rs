@@ -2,9 +2,7 @@ use {
     crate::{
         boundary::liquidity::constant_product::to_boundary_pool,
         domain::{
-            eth,
-            liquidity,
-            order,
+            eth, liquidity, order,
             solution::{self},
         },
     },
@@ -16,13 +14,8 @@ use {
     solver::{
         liquidity::{
             slippage::{SlippageCalculator, SlippageContext},
-            AmmOrderExecution,
-            ConstantProductOrder,
-            Exchange,
-            LimitOrder,
-            LimitOrderExecution,
-            LimitOrderId,
-            SettlementHandling,
+            AmmOrderExecution, ConstantProductOrder, Exchange, LimitOrder, LimitOrderExecution,
+            LimitOrderId, SettlementHandling,
         },
         settlement::SettlementEncoder,
         solver::naive_solver,

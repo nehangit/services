@@ -6,8 +6,7 @@ use {
             ethflow_events::event_retriever::EthFlowRefundRetriever,
             onchain_order_events::{
                 ethflow_events::{
-                    determine_ethflow_indexing_start,
-                    determine_ethflow_refund_indexing_start,
+                    determine_ethflow_indexing_start, determine_ethflow_refund_indexing_start,
                     EthFlowOnchainOrderParser,
                 },
                 event_retriever::CoWSwapOnchainOrdersContract,

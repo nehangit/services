@@ -16,8 +16,7 @@ use {
     futures::StreamExt,
     prometheus::{
         core::{AtomicU64, GenericGauge},
-        HistogramVec,
-        IntCounterVec,
+        HistogramVec, IntCounterVec,
     },
     shared::maintenance::Maintaining,
     std::{future::Future, sync::Arc},

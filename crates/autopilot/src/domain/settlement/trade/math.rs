@@ -5,8 +5,7 @@ use {
         domain::{
             self,
             auction::{self, order},
-            eth,
-            fee,
+            eth, fee,
             settlement::{
                 transaction::{ClearingPrices, Prices},
                 {self},

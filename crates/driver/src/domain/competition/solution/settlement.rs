@@ -3,8 +3,7 @@ use {
     crate::{
         domain::{
             competition::{
-                self,
-                auction,
+                self, auction,
                 order::{self},
                 solution::{self, error, Trade},
             },

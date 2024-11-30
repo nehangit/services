@@ -7,14 +7,8 @@ pub use {
     model::{
         interaction::InteractionData,
         order::{
-            BuyTokenDestination,
-            EthflowData,
-            OnchainOrderData,
-            Order,
-            OrderClass,
-            OrderKind,
-            OrderUid,
-            SellTokenSource,
+            BuyTokenDestination, EthflowData, OnchainOrderData, Order, OrderClass, OrderKind,
+            OrderUid, SellTokenSource,
         },
         signature::{EcdsaSignature, Signature, SigningScheme},
         solver_competition::SolverCompetitionDB,

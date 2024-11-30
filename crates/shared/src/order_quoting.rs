@@ -1,9 +1,6 @@
 use {
     super::price_estimation::{
-        self,
-        native::NativePriceEstimating,
-        PriceEstimating,
-        PriceEstimationError,
+        self, native::NativePriceEstimating, PriceEstimating, PriceEstimationError,
     },
     crate::{
         account_balances::{BalanceFetching, Query},

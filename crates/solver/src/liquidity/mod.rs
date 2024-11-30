@@ -21,10 +21,7 @@ use {
         sources::{
             balancer_v2::{
                 pool_fetching::{
-                    AmplificationParameter,
-                    TokenState,
-                    WeightedPoolVersion,
-                    WeightedTokenState,
+                    AmplificationParameter, TokenState, WeightedPoolVersion, WeightedTokenState,
                 },
                 swap::fixed_point::Bfp,
             },

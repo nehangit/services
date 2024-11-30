@@ -3,9 +3,7 @@ use {
     crate::{
         domain::{
             competition::{self, auction, sorting},
-            eth,
-            liquidity,
-            time,
+            eth, liquidity, time,
         },
         infra::{self, blockchain, config::file::OrderPriorityStrategy, observe, Ethereum},
         util::{self, Bytes},

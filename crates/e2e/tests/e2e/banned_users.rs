@@ -3,11 +3,7 @@ use {
     e2e::{
         nodes::forked_node::ForkedNodeApi,
         setup::{
-            run_forked_test_with_block_number,
-            to_wei,
-            to_wei_with_exp,
-            OnchainComponents,
-            Services,
+            run_forked_test_with_block_number, to_wei, to_wei_with_exp, OnchainComponents, Services,
         },
         tx,
     },

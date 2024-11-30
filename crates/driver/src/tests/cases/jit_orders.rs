@@ -7,14 +7,8 @@ use crate::{
         self,
         cases::{is_approximately_equal, EtherExt},
         setup::{
-            self,
-            ab_adjusted_pool,
-            ab_liquidity_quote,
-            ab_order,
-            ab_solution,
-            test_solver,
-            ExpectedOrderAmounts,
-            Test,
+            self, ab_adjusted_pool, ab_liquidity_quote, ab_order, ab_solution, test_solver,
+            ExpectedOrderAmounts, Test,
         },
     },
 };

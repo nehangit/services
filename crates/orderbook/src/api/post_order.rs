@@ -10,17 +10,13 @@ use {
         signature,
     },
     shared::order_validation::{
-        AppDataValidationError,
-        OrderValidToError,
-        PartialValidationError,
-        ValidationError,
+        AppDataValidationError, OrderValidToError, PartialValidationError, ValidationError,
     },
     std::{convert::Infallible, sync::Arc},
     warp::{
         hyper::StatusCode,
         reply::{self, with_status},
-        Filter,
-        Rejection,
+        Filter, Rejection,
     },
 };
 

@@ -14,16 +14,14 @@ use {
         order_events::OrderEventLabel,
         order_execution::Asset,
         orders::{
-            BuyTokenDestination as DbBuyTokenDestination,
-            SellTokenSource as DbSellTokenSource,
+            BuyTokenDestination as DbBuyTokenDestination, SellTokenSource as DbSellTokenSource,
             SigningScheme as DbSigningScheme,
         },
         settlement_observations::Observation,
         solver_competition::{Order, Solution},
     },
     domain::auction::order::{
-        BuyTokenDestination as DomainBuyTokenDestination,
-        SellTokenSource as DomainSellTokenSource,
+        BuyTokenDestination as DomainBuyTokenDestination, SellTokenSource as DomainSellTokenSource,
         SigningScheme as DomainSigningScheme,
     },
     futures::{StreamExt, TryStreamExt},

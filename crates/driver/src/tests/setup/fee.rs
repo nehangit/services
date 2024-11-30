@@ -1,7 +1,5 @@
 use {
-    crate::domain::eth,
-    number::serialization::HexOrDecimalU256,
-    serde_json::json,
+    crate::domain::eth, number::serialization::HexOrDecimalU256, serde_json::json,
     serde_with::serde_as,
 };
 

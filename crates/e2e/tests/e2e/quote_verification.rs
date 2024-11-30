@@ -10,8 +10,7 @@ use {
     shared::{
         price_estimation::{
             trade_verifier::{PriceQuery, TradeVerifier, TradeVerifying},
-            Estimate,
-            Verification,
+            Estimate, Verification,
         },
         trade_finding::{Interaction, Trade},
     },

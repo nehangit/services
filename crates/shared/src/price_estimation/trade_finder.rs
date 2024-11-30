@@ -5,11 +5,7 @@ use {
     super::{
         rate_limited,
         trade_verifier::{PriceQuery, TradeVerifying},
-        Estimate,
-        PriceEstimateResult,
-        PriceEstimating,
-        PriceEstimationError,
-        Query,
+        Estimate, PriceEstimateResult, PriceEstimating, PriceEstimationError, Query,
     },
     crate::trade_finding::{TradeError, TradeFinding},
     anyhow::{anyhow, Result},

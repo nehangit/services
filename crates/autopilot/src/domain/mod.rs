@@ -8,8 +8,7 @@ pub mod settlement;
 pub use {
     auction::{
         order::{Order, OrderUid},
-        Auction,
-        RawAuctionData,
+        Auction, RawAuctionData,
     },
     fee::ProtocolFees,
     quote::Quote,

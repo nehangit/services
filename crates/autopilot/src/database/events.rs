@@ -2,18 +2,15 @@ use {
     anyhow::{anyhow, Context, Result},
     contracts::gpv2_settlement::{
         event_data::{
-            OrderInvalidated as ContractInvalidation,
-            PreSignature as ContractPreSignature,
-            Settlement as ContractSettlement,
-            Trade as ContractTrade,
+            OrderInvalidated as ContractInvalidation, PreSignature as ContractPreSignature,
+            Settlement as ContractSettlement, Trade as ContractTrade,
         },
         Event as ContractEvent,
     },
     database::{
         byte_array::ByteArray,
         events::{Event, EventIndex, Invalidation, PreSignature, Settlement, Trade},
-        OrderUid,
-        PgTransaction,
+        OrderUid, PgTransaction,
     },
     ethcontract::{Event as EthContractEvent, EventMetadata},
     number::conversions::u256_to_big_decimal,

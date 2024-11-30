@@ -1,12 +1,7 @@
 use {
     crate::{
-        api,
-        arguments::Arguments,
-        database::Postgres,
-        ipfs::Ipfs,
-        ipfs_app_data::IpfsAppData,
-        orderbook::Orderbook,
-        quoter::QuoteHandler,
+        api, arguments::Arguments, database::Postgres, ipfs::Ipfs, ipfs_app_data::IpfsAppData,
+        orderbook::Orderbook, quoter::QuoteHandler,
     },
     anyhow::{anyhow, Context, Result},
     app_data::Validator,
@@ -36,8 +31,7 @@ use {
         price_estimation::{
             factory::{self, PriceEstimatorFactory},
             native::NativePriceEstimating,
-            PriceEstimating,
-            QuoteVerificationMode,
+            PriceEstimating, QuoteVerificationMode,
         },
         signature_validator,
         sources::{self, uniswap_v2::UniV2BaselineSourceParameters, BaselineSource},

@@ -1,6 +1,5 @@
 use crate::{
-    arguments,
-    boundary,
+    arguments, boundary,
     domain::{
         self,
         fee::{FeeFactor, Quote},

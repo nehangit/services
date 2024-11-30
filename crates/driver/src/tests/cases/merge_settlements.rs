@@ -1,19 +1,8 @@
 use crate::tests::{
     cases::EtherExt,
     setup::{
-        self,
-        ab_order,
-        ab_pool,
-        ab_solution,
-        ad_order,
-        ad_pool,
-        ad_solution,
-        cd_order,
-        cd_pool,
-        cd_solution,
-        test_solver,
-        Solution,
-        Test,
+        self, ab_order, ab_pool, ab_solution, ad_order, ad_pool, ad_solution, cd_order, cd_pool,
+        cd_solution, test_solver, Solution, Test,
     },
 };
 
