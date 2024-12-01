@@ -1,6 +1,6 @@
 use {super::Response, tracing::Instrument};
 
-mod dto;
+pub mod dto;
 
 use {crate::domain::solver::Solver, std::sync::Arc};
 

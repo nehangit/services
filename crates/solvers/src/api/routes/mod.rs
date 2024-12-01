@@ -2,7 +2,7 @@ use serde::Serialize;
 
 mod healthz;
 mod metrics;
-mod solve;
+pub mod solve;
 
 pub(super) use {healthz::healthz, metrics::metrics, solve::solve};
 

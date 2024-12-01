@@ -2,7 +2,7 @@
 #![allow(dead_code)]
 #![recursion_limit = "256"]
 
-mod api;
+pub mod api;
 mod boundary;
 mod domain;
 mod infra;
