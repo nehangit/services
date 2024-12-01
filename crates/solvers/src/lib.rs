@@ -4,7 +4,7 @@
 
 pub mod api;
 mod boundary;
-mod domain;
+pub mod domain;
 mod infra;
 mod run;
 #[cfg(test)]
